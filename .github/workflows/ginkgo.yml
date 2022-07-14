@@ -17,5 +17,7 @@ jobs:
         go-version: ${{ matrix.go-version }}
     - name: Install Ginkgo
       run: go get -u github.com/onsi/ginkgo/ginkgo
+    - run: go mod tidy
+    - run: make build
     - name: Test
       run: ginkgo -cover ./...
