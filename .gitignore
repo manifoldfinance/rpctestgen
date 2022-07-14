@@ -2,3 +2,5 @@ tests/
 ethash/
 rpctestgen
 openrpc.json
+.DS_Store
+node_modules
